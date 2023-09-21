@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-color: #fcfcfc; color: rgb(255, 255, 255); }
+html, body { height: auto; background-color: #fcfcfc; color: rgb(255, 255, 255); }
 body { margin: 0; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Electrolize', sans-serif; }
 
 

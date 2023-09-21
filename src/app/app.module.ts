@@ -13,6 +13,7 @@ import { EpisodeComponent } from './episodes/components/episode/episode.componen
 import { LocationComponent } from './location/components/location/location.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
+import { PokeTableComponent } from './components/poke-table/poke-table.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MaterialModule } from 'src/shared/material.module';
     AppNavBarComponent,
     CharactersComponent,
     EpisodeComponent,
-    LocationComponent
+    LocationComponent,
+    PokeTableComponent
   ],
   imports: [
     BrowserModule,
