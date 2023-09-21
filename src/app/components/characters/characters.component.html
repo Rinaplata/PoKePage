@@ -1,13 +1,25 @@
 <div class="carrusel" style="grid-auto-rows: 13rem">
-    <mat-card style="height: 250px;" *ngFor="let character of characters" class="example-card">
-        <mat-card-header style="background-color: gray; ">
-          <!-- <div mat-card-avatar class="example-header-image"
-          style="background-image: url('{{character.image}}');"></div> -->
+  <mat-card *ngFor="let character of characters" class="Card">
+    <!--      <mat-card-header>
           <mat-card-title>{{character.name}}</mat-card-title>
-          <!-- <mat-card-subtitle>{{character.species}}</mat-card-subtitle> -->
-        </mat-card-header>
-        <img mat-card-image src="{{character.sprites.front_default}}" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-        </mat-card-content>
-      </mat-card>
+          <mat-card-subtitle>pokemon</mat-card-subtitle>
+      </mat-card-header> -->
+
+    <img
+      class="pokemon"
+      mat-card-image
+      src="{{ character.sprites.front_default }}"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-chip-listbox >
+      <mat-chip style="background-color: #8BC34A">
+        <img
+          width="40px"
+          src="{{ character.sprites.front_default }}"
+          alt="Photo of a Shiba Inu"
+        />
+        {{character.name}}
+      </mat-chip>
+    </mat-chip-listbox>
+  </mat-card>
 </div>

@@ -1,16 +1,24 @@
-.example-card {
-    max-width: 400px;
-  }
-  
-  .example-header-image {
-    background-size: cover;
-  }
+.pokemon {
+  display: flex;
+  width: 300px;
+}
 
-  .carrusel{
-    display: grid;
-    gap: 1rem;
-    grid-auto-flow: dense;
-    grid-auto-rows: 28rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    padding: 1em;
-  }
+.Card {
+  background-color: #f1f1f1;
+  width: 350px;
+  height: 300px;
+  color: #f1f1f1;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.carrusel {
+  display: grid;
+  gap: 10rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 28rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  padding: 2em;
+}

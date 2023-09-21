@@ -12,6 +12,7 @@ import { CharactersComponent } from './components/characters/characters.componen
 import { EpisodeComponent } from './episodes/components/episode/episode.component';
 import { LocationComponent } from './location/components/location/location.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from 'src/shared/material.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    MaterialModule
   ],
   providers: [],
 
