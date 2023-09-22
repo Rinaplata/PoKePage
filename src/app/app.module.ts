@@ -14,6 +14,8 @@ import { LocationComponent } from './location/components/location/location.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
 import { PokeTableComponent } from './components/poke-table/poke-table.component';
+import { concat } from 'rxjs';
+
 
 @NgModule({
   declarations: [
@@ -37,4 +39,8 @@ import { PokeTableComponent } from './components/poke-table/poke-table.component
 
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
+
+

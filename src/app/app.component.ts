@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Sasori Kun Project';
+  title = 'rina';
   numero: number = 16
 }
