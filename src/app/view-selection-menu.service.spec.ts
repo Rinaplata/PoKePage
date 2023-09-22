@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ViewSelectionMenuService } from './view-selection-menu.service';
+import { ViewSelectionService } from './view-selection-menu.service';
 
 describe('ViewSelectionMenuService', () => {
-  let service: ViewSelectionMenuService;
+  let service: ViewSelectionService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ViewSelectionMenuService);
+    service = TestBed.inject(ViewSelectionService);
   });
 
   it('should be created', () => {
