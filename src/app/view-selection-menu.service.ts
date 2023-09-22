@@ -10,3 +10,4 @@ export class ViewSelectionService {
 
   // Puedes agregar métodos relacionados con la selección aquí
 }
+
