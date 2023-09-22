@@ -15,6 +15,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
 import { PokeTableComponent } from './components/poke-table/poke-table.component';
 import { ViewSelectionService } from './view-selection-menu.service';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './components/characters/pipes/filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { ViewSelectionService } from './view-selection-menu.service';
     CharactersComponent,
     EpisodeComponent,
     LocationComponent,
-    PokeTableComponent
+    PokeTableComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { ViewSelectionService } from './view-selection-menu.service';
     MatCardModule,
     MatButtonModule,
     MatTableModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
   ],
   providers: [ViewSelectionService],
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from './model/character';
 import { CharacterService } from './service/character.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-characters',
@@ -8,7 +9,8 @@ import { CharacterService } from './service/character.service';
   styleUrls: ['./characters.component.css']
 })
 export class CharactersComponent implements OnInit {
-  characters: Character[] = []
+  characters: Character[] = [];
+  filterData='';
 
   constructor(
     private _characterService: CharacterService
@@ -19,15 +21,18 @@ export class CharactersComponent implements OnInit {
   }
 
   getCharacters(){
-
-    for (let index = 1; index < 21; index++) {
+    var pokemon;
+    for (let index = 1; index < 300; index++) {
       this._characterService.getAllCharacters(index.toString()).subscribe((response: any)=>{
         if(response){
-          this.characters.push(response)
-          console.log(this.characters)
+          pokemon = {
+            name: response.name,
+            sprite: response.sprites.front_default,
+            type: response.types[0].type.name,
+          }
+          this.characters.push(pokemon)
         }else{
           this.characters = []
-          console.log("e3se", response)
         }
       })
 
