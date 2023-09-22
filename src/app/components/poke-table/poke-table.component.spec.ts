@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PokeTableComponent } from './poke-table.component';
 
+
 describe('PokeTableComponent', () => {
   let component: PokeTableComponent;
   let fixture: ComponentFixture<PokeTableComponent>;

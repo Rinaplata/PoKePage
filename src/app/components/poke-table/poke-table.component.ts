@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Items } from './model/items';
 import { ItemsService } from './service/item.service';
+import { AppModule } from '../../AppModule';
 
 @Component({
   selector: 'app-poke-table',
