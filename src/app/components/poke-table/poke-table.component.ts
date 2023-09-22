@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { Items } from './model/items';
 import { ItemsService } from './service/item.service';
+import { MatTableDataSource } from '@angular/material/table';
+
 
 @Component({
   selector: 'app-poke-table',
@@ -9,7 +11,7 @@ import { ItemsService } from './service/item.service';
 })
 export class PokeTableComponent {
   items: Items[] = []
-
+  dataSource: any;
   constructor(
     private _itemsService: ItemsService
   ) { }
@@ -17,12 +19,13 @@ export class PokeTableComponent {
   ngOnInit(): void {
     this.getItems()
   }
-
+  
   getItems() {
-    for (let index = 1; index < 21; index++) {
+    for (let index = 1; index < 50; index++) {
       this._itemsService.getAllItems(index.toString()).subscribe((response: any) => {
         if (response) {
           this.items.push(response)
+          this.dataSource = new MatTableDataSource(this.items);
           console.log(this.items)
         } else {
           this.items = []
@@ -31,4 +34,6 @@ export class PokeTableComponent {
       })
     }
   }
+  
+   
 }

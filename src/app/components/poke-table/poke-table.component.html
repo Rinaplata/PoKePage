@@ -1,1 +1,27 @@
+<div class="search-bar">
+    <input class="input" type="text" placeholder="Buscar" />
+    <button class="button">Buscar</button>
+</div>
 
+
+<table mat-table [dataSource]="dataSource" class="poke-table-container">
+    <thead>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="sprites">
+            <th mat-header-cell *matHeaderCellDef>Sprites</th>
+            <td mat-cell *matCellDef="let element">
+                <img src="{{ element.sprites.default }}" alt="Pokemon Image" width="50">
+            </td>
+        </ng-container>
+    </thead>
+
+
+    <!-- Agrega más columnas si es necesario -->
+
+    <tr mat-header-row *matHeaderRowDef="['name', 'sprites']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['name', 'sprites']"></tr>
+</table>

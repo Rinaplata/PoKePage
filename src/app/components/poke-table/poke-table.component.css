@@ -1,0 +1,45 @@
+.mat-mdc-table.mdc-data-table__table.cdk-table.poke-table-container {
+    margin: 0px 15px;
+}
+
+
+.poke-table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.poke-table-container tr:nth-child(odd) {
+    background-color: white;
+}
+
+.poke-table-container thead{
+    color: #f1f1f1;
+    background-color: #212529;
+}
+
+.search-bar{
+    display: flex;
+    padding: 30px;
+    margin-left: 3opx;
+    column-gap: 14px;
+    justify-content: flex-end;
+  }
+  
+  .input {
+  color: #f1f1f1;
+  padding: 17px;
+  background-color: #212529;
+  border: none;
+  font-size: 15pt;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  }
+  
+  .button{
+    border: none;
+    font-size: 15pt;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }

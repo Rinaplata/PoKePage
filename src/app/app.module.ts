@@ -14,6 +14,7 @@ import { LocationComponent } from './location/components/location/location.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
 import { PokeTableComponent } from './components/poke-table/poke-table.component';
+import { ViewSelectionService } from './view-selection-menu.service';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,10 @@ import { PokeTableComponent } from './components/poke-table/poke-table.component
     MatTableModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [ViewSelectionService],
 
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
+  
 })
 export class AppModule { }
