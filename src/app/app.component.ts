@@ -7,11 +7,6 @@ import { ViewSelectionService } from './view-selection-menu.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-<<<<<<< HEAD
   title = 'rina';
-=======
-  constructor(public  viewSelectionService: ViewSelectionService) { }
-  title = 'Sasori Kun Project';
->>>>>>> main
   numero: number = 16
 }
