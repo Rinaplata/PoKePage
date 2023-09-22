@@ -7,6 +7,7 @@ import { ViewSelectionService } from './view-selection-menu.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(public  viewSelectionService: ViewSelectionService) { }
   title = 'rina';
   numero: number = 16
 }
