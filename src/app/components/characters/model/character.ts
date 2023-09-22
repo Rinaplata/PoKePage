@@ -1,8 +1,6 @@
 export interface Character{
     name: string,
-    sprites : Sprites
+    sprite : string
+    type: string
 }
 
-export interface Sprites{
-  front_default: string
-}

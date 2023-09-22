@@ -1,26 +1,38 @@
 <div class="search-bar">
-  <input class="input" type="text"  placeholder="Buscar Pokémon" />
-  <button class="button" >Buscar</button>
+  <input type="text" class="form-control" name="filterData" placeholder="search" [(ngModel)]="filterData" >
 </div>
 
 
 <div class="carrusel" style="grid-auto-rows: 13rem">
-  <mat-card *ngFor="let character of characters" class="Card">
+  
+  <mat-card *ngFor="let character of characters | filter:filterData" class="Card">
     <img
       class="pokemon"
       mat-card-image
-      src="{{ character.sprites.front_default }}"
+      src="{{ character.sprite}}"
       alt="Photo of a Shiba Inu"
     />
     <mat-chip-listbox >
       <mat-chip style="background-color: #8BC34A">
         <img
           width="40px"
-          src="{{ character.sprites.front_default }}"
+          src="{{ character.sprite }}"
           alt="Photo of a Shiba Inu"
         />
         {{character.name}}
       </mat-chip>
+      <div [ngSwitch]="character.type" style="text-align: center">
+        <div class="chip" *ngSwitchCase="'water'" style="background:rgba(0, 255, 251, 0.624); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'fire'" style="background:rgba(255, 166, 0, 0.734); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'bug'" style="background:rgba(32, 255, 20, 0.487); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'electric'" style="background:rgba(230, 242, 0, 0.727); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'normal'" style="background:rgba(119, 119, 116, 0.515); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'poison'" style="background:rgba(144, 13, 162, 0.494); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'grass'" style="background:rgba(10, 112, 5, 0.494); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'psychic'" style="background:rgba(209, 96, 191, 0.494); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchCase="'rock'" style="background:rgba(53, 50, 53, 0.494); color: black;" >{{character.type}}</div>
+        <div class="chip" *ngSwitchDefault="'rock'" style="background:rgba(255, 4, 4, 0.494); color: black;" >{{character.type}}</div>
+      </div>
     </mat-chip-listbox>
   </mat-card>
 </div>

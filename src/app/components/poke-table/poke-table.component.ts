@@ -27,10 +27,8 @@ export class PokeTableComponent {
         if (response) {
           this.items.push(response)
           this.dataSource = new MatTableDataSource(this.items);
-          console.log(this.items)
         } else {
           this.items = []
-          console.log("e3se", response)
         }
       })
     }
