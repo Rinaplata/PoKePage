@@ -10,8 +10,12 @@ import { CharactersComponent } from './components/characters/characters.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
 import { PokeTableComponent } from './components/poke-table/poke-table.component';
+<<<<<<< HEAD:src/app/AppModule.ts
 import { RouterModule, Routes } from '@angular/router';
 
+=======
+import { ViewSelectionService } from './view-selection-menu.service';
+>>>>>>> main:src/app/app.module.ts
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import { RouterModule, Routes } from '@angular/router';
     MatCardModule,
     MatButtonModule,
     MatTableModule,
+<<<<<<< HEAD:src/app/AppModule.ts
     MaterialModule,
     RouterModule.forRoot([
     { path: 'character', component: CharactersComponent },
@@ -35,8 +40,15 @@ import { RouterModule, Routes } from '@angular/router';
   ]),
 ],
   providers: [],
+=======
+    MaterialModule
+  ],
+  providers: [ViewSelectionService],
+>>>>>>> main:src/app/app.module.ts
 
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
+  
 })
 
 

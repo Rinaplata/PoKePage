@@ -5,7 +5,11 @@
 
 <app-nav-bar></app-nav-bar>
 
-<app-characters></app-characters>
+<div *ngIf="viewSelectionService.selectedView === 'characters'">
+  <app-characters></app-characters>
+</div>
 
-<app-poke-table></app-poke-table>
+<div *ngIf="viewSelectionService.selectedView === 'poke-table'">
+  <app-poke-table></app-poke-table>
+</div>
 
