@@ -4,7 +4,7 @@
 
 
 <div class="carrusel" style="grid-auto-rows: 13rem">
-  
+
   <mat-card *ngFor="let character of characters | filter:filterData" class="Card">
     <img
       class="pokemon"
@@ -22,16 +22,16 @@
         {{character.name}}
       </mat-chip>
       <div [ngSwitch]="character.type" style="text-align: center">
-        <div class="chip" *ngSwitchCase="'water'" style="background:rgba(0, 255, 251, 0.624); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'fire'" style="background:rgba(255, 166, 0, 0.734); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'bug'" style="background:rgba(32, 255, 20, 0.487); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'electric'" style="background:rgba(230, 242, 0, 0.727); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'normal'" style="background:rgba(119, 119, 116, 0.515); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'poison'" style="background:rgba(144, 13, 162, 0.494); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'grass'" style="background:rgba(10, 112, 5, 0.494); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'psychic'" style="background:rgba(209, 96, 191, 0.494); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchCase="'rock'" style="background:rgba(53, 50, 53, 0.494); color: black;" >{{character.type}}</div>
-        <div class="chip" *ngSwitchDefault="'rock'" style="background:rgba(255, 4, 4, 0.494); color: black;" >{{character.type}}</div>
+        <div class="chip chip-water" *ngSwitchCase="'water'" >{{character.type}}</div>
+        <div class="chip chip-fire" *ngSwitchCase="'fire'" >{{character.type}}</div>
+        <div class="chip chip-bug" *ngSwitchCase="'bug'" >{{character.type}}</div>
+        <div class="chip chip-electric" *ngSwitchCase="'electric'">{{character.type}}</div>
+        <div class="chip chip-normal" *ngSwitchCase="'normal'">{{character.type}}</div>
+        <div class="chip chip-poison" *ngSwitchCase="'poison'"  >{{character.type}}</div>
+        <div class="chip chip-grass" *ngSwitchCase="'grass'" >{{character.type}}</div>
+        <div class="chip chip-psychic" *ngSwitchCase="'psychic'" >{{character.type}}</div>
+        <div class="chip chip-rock" *ngSwitchCase="'rock'">{{character.type}}</div>
+        <div class="chip chip-rock" *ngSwitchDefault="'rock'">{{character.type}}</div>
       </div>
     </mat-chip-listbox>
   </mat-card>

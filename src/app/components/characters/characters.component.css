@@ -51,12 +51,49 @@ border-radius: 5px;
 }
 
 .chip {
-  margin: 3px;
+  margin: 4px;
   display: inline-block;
-  padding: 0 9px;
-  height: 39px;
+  padding: 0 23px;
+  height: 33px;
   font-size: 14px;
-  line-height: 40px;
-  border-radius: 25px;
+  line-height: 35px;
+  border-radius: 21px;
+  color: black;
 }
 
+.chip-water {
+  background:rgba(0, 255, 251, 0.624);
+}
+
+.chip-fire{
+  background:rgba(255, 166, 0, 0.734);
+}
+
+.chip-bug{
+  background:rgba(32, 255, 20, 0.487);
+}
+
+.chip-electric{
+  background:rgba(230, 242, 0, 0.727);
+}
+
+.chip-normal{
+  background:rgba(119, 119, 116, 0.515);
+}
+
+.chip-poison{
+  background:rgba(144, 13, 162, 0.494);
+}
+
+.chip-grass{
+  background:rgba(10, 112, 5, 0.494);
+}
+
+.chip-psychic{
+background:rgba(209, 96, 191, 0.494);
+}
+
+.chip-rock{
+  background:rgba(53, 50, 53, 0.494);
+
+}
