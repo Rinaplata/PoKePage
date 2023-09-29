@@ -1,4 +1,4 @@
-.search-bar{
+.search-bar {
   display: flex;
   padding: 30px;
   margin-left: 3opx;
@@ -7,17 +7,17 @@
 }
 
 .input {
-color: #f1f1f1;
-padding: 17px;
-background-color: #212529;
-border: none;
-font-size: 15pt;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+  color: #f1f1f1;
+  padding: 17px;
+  background-color: #212529;
+  border: none;
+  font-size: 15pt;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
-.button{
+.button {
   border: none;
   font-size: 15pt;
   -webkit-border-radius: 5px;
@@ -35,6 +35,15 @@ border-radius: 5px;
   width: 350px;
   height: 300px;
   color: #f1f1f1;
+}
+
+.Card:hover {
+  transform: scale(1.4);
+  z-index: 10000000000;
+}
+
+.Card-transition {
+  transition: transform 150ms ease-in-out;
 }
 
 .example-header-image {
@@ -62,38 +71,37 @@ border-radius: 5px;
 }
 
 .chip-water {
-  background:rgba(0, 255, 251, 0.624);
+  background: rgba(0, 255, 251, 0.624);
 }
 
-.chip-fire{
-  background:rgba(255, 166, 0, 0.734);
+.chip-fire {
+  background: rgba(255, 166, 0, 0.734);
 }
 
-.chip-bug{
-  background:rgba(32, 255, 20, 0.487);
+.chip-bug {
+  background: rgba(32, 255, 20, 0.487);
 }
 
-.chip-electric{
-  background:rgba(230, 242, 0, 0.727);
+.chip-electric {
+  background: rgba(230, 242, 0, 0.727);
 }
 
-.chip-normal{
-  background:rgba(119, 119, 116, 0.515);
+.chip-normal {
+  background: rgba(119, 119, 116, 0.515);
 }
 
-.chip-poison{
-  background:rgba(144, 13, 162, 0.494);
+.chip-poison {
+  background: rgba(144, 13, 162, 0.494);
 }
 
-.chip-grass{
-  background:rgba(10, 112, 5, 0.494);
+.chip-grass {
+  background: rgba(10, 112, 5, 0.494);
 }
 
-.chip-psychic{
-background:rgba(209, 96, 191, 0.494);
+.chip-psychic {
+  background: rgba(209, 96, 191, 0.494);
 }
 
-.chip-rock{
-  background:rgba(53, 50, 53, 0.494);
-
+.chip-rock {
+  background: rgba(53, 50, 53, 0.494);
 }
