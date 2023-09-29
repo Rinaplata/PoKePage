@@ -1,7 +1,7 @@
 .search-bar {
   display: flex;
   padding: 30px;
-  margin-left: 3opx;
+  margin-left: 30px;
   column-gap: 14px;
   justify-content: flex-end;
 }
@@ -38,16 +38,16 @@
 }
 
 .Card:hover {
-  transform: scale(1.4);
+  transform: scale(1.299);
   z-index: 10000000000;
 }
 
-.Card-transition {
+.Card .transition {
   transition: transform 150ms ease-in-out;
 }
 
 .example-header-image {
-  background-size: cover;
+  background-size:cover;
 }
 
 .carrusel {
